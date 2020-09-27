@@ -78,13 +78,7 @@ export default function Home() {
             </a>
           </figure>
         </div>
-        <br />
-        <div>
-
-        </div>
-
       </footer>
-      <p>© 2020</p>
       <style jsx>
         {
           ` .container {
