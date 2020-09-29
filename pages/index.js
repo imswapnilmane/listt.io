@@ -22,7 +22,7 @@ export default function Home() {
 
         <div className="grid">
           {/* platform and web development - link to github examples*/}
-          <a href="" className="card">
+          <a href="https://github.com/hayeskg/" className="card">
             <h3>exchange &rarr;</h3>
             <p>Have something to offer? </p>
             <p>Share.</p>
@@ -34,13 +34,13 @@ export default function Home() {
             <p>sustainibly.</p>
           </a>
           {/* Tech development services - link to portfolio work or kristofhayes.me*/}
-          <a href="https://github.com/hayeskg/" className="card">
+          <a href="https://www.kristofhayes.me/" className="card">
             <h3>develop &rarr;</h3>
             <p>Got an idea to grow?</p>
             <p>Say hi.</p>
           </a>
           {/* degrowth, movements, blog format - NC news*/}
-          <a href="https://www.kristofhayes.me/" className="card">
+          <a href="https://www.degrowth.info/en/" className="card">
             <h3>degrowth &rarr;</h3>
             <p>
               Consume less.
