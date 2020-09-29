@@ -17,30 +17,30 @@ export default function Home() {
         </h1>
 
         <p className="description">
-          an open source marketplace for the circular economy
-    </p>
+          an open source platform for the circular economy
+        </p>
 
         <div className="grid">
           {/* platform and web development - link to github examples*/}
-          <a href="https://github.com/hayeskg/" className="card">
+          <a href="" className="card">
             <h3>exchange &rarr;</h3>
             <p>Have something to offer? </p>
             <p>Share.</p>
           </a>
           {/* Blog on sustainable, open-source tech - NC news*/}
-          <a href="https://nodered.org/" className="card">
+          <a href="https://techimpactmakers.com/" className="card">
             <h3>open source &rarr;</h3>
             <p>Find out how to innovate</p>
             <p>sustainibly.</p>
           </a>
           {/* Tech development services - link to portfolio work or kristofhayes.me*/}
-          <a href="https://www.kristofhayes.me/" className="card">
+          <a href="https://github.com/hayeskg/" className="card">
             <h3>develop &rarr;</h3>
             <p>Got an idea to grow?</p>
             <p>Say hi.</p>
           </a>
           {/* degrowth, movements, blog format - NC news*/}
-          <a href="https://www.degrowth.info/en/" className="card">
+          <a href="https://www.kristofhayes.me/" className="card">
             <h3>degrowth &rarr;</h3>
             <p>
               Consume less.
@@ -174,6 +174,8 @@ export default function Home() {
       }
 
       .card {
+        height: 10rem;
+        width: 20rem;
         margin: 1rem;
         flex-basis: 45%;
         padding: 1.5rem;
