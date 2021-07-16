@@ -17,34 +17,30 @@ export default function Home() {
         </h1>
 
         <p className="description">
-          an open source platform for the circular economy
+          circular solutions for regeneration
         </p>
 
         <div className="grid">
-          {/* platform and web development - link to github examples*/}
           <a href="https://github.com/hayeskg/" className="card">
-            <h3>exchange &rarr;</h3>
-            <p>Have something to offer? </p>
-            <p>Share.</p>
+            <h3>build &rarr;</h3>
+            <p>Open source systems.</p>
+            <p>Full stack prototypes.</p>
           </a>
-          {/* Blog on sustainable, open-source tech - NC news*/}
-          <a href="https://techimpactmakers.com/" className="card">
-            <h3>open source &rarr;</h3>
-            <p>Find out how to innovate</p>
-            <p>sustainibly.</p>
-          </a>
-          {/* Tech development services - link to portfolio work or kristofhayes.me*/}
           <a href="https://www.kristofhayes.me/" className="card">
-            <h3>develop &rarr;</h3>
-            <p>Got an idea to grow?</p>
-            <p>Say hi.</p>
+            <h3>project &rarr;</h3>
+            <p>Explore synergies.</p>
+            <p>Demonstrate value.</p>
           </a>
-          {/* degrowth, movements, blog format - NC news*/}
-          <a href="https://www.degrowth.info/en/" className="card">
-            <h3>degrowth &rarr;</h3>
+          <a href="https://hayeskg.medium.com/" className="card">
+            <h3>grow &rarr;</h3>
+            <p>Plan ahead.</p>
+            <p>Regenerate.</p>
+          </a>
+          <a href="https://www.unep.org/explore-topics/climate-change/facts-about-climate-emergency" className="card">
+            <h3>purpose &rarr;</h3>
             <p>
-              Consume less.
-        </p>
+              Act now.
+            </p>
           </a>
         </div>
       </main>
@@ -54,6 +50,20 @@ export default function Home() {
           <figure>
             <a href="https://github.com/hayeskg/">
               <img src='/images/github.png' alt="GitHub logo" />
+            </a>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <a href="https://gitlab.com/kristof-e-nano">
+              <img src='/images/gitlab.png' alt="GitLab logo" />
+            </a>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <a href="https://hayeskg.medium.com/">
+              <img src='/images/medium.png' alt="Medium logo" />
             </a>
           </figure>
         </div>
