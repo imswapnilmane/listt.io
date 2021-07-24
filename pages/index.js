@@ -10,7 +10,12 @@ export default function Home() {
   });
 
   function toggleDropdowns(key, boolVal) {
-    let dropdownsTemp = {...dropdowns};
+    let dropdownsTemp = {
+      build: false,
+      project: false, 
+      grow: false,
+      purpose: false
+    };
     dropdownsTemp[key] = !dropdowns[key];
     setDropdowns(dropdownsTemp);
   }
