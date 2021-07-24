@@ -1,6 +1,20 @@
 import Head from 'next/head'
 
 export default function Home() {
+
+  const [dropdowns, setDropdowns] = React.useState({
+    build: false,
+    project: false, 
+    grow: false,
+    purpose: false
+  });
+
+  function toggleDropdowns(key, boolVal) {
+    let dropdownsTemp = {...dropdowns};
+    dropdownsTemp[key] = !dropdowns[key];
+    setDropdowns(dropdownsTemp);
+  }
+
   return (
     <div className="container">
 
@@ -15,32 +29,82 @@ export default function Home() {
         <h1 className="title">
           welcome to <a href="http://www.listt.io/">listt.io</a>
         </h1>
-
         <p className="description">
           circular solutions for regeneration
         </p>
 
         <div className="grid">
-          <a href="https://github.com/hayeskg/" className="card">
+          <a 
+            // href="https://github.com/hayeskg/"
+            onClick = {()=> toggleDropdowns("build", !dropdowns.build)} 
+            className="card"
+          >
             <h3>build &rarr;</h3>
             <p>Open source systems.</p>
             <p>Full stack prototypes.</p>
+            {
+              dropdowns.build?
+                <div className="subhead">
+                  <p>sensors ~ IoT ~ robotics ~ platform ~ data </p>
+                  <p className="emoji">	&#x1F4BB;	&#x1F6E0; &#x1F916;</p>
+                </div>: 
+                <div>
+                </div>
+            }
           </a>
-          <a href="https://www.kristofhayes.me/" className="card">
+          <a 
+            // href="https://www.kristofhayes.me/" 
+            onClick = {()=> toggleDropdowns("project", !dropdowns.project)} 
+            className="card"
+          >
             <h3>project &rarr;</h3>
             <p>Explore synergies.</p>
             <p>Demonstrate value.</p>
+            {
+              dropdowns.project?
+                <div className="subhead">
+                  <p>agtech ~ innovation ~ food ~ education</p>
+                  <p className="emoji">	&#x1F69C;	&#x1F5FA; &#x1F33D;</p>
+                </div>: 
+                <div>
+                </div>
+            }
           </a>
-          <a href="https://hayeskg.medium.com/" className="card">
+          <a 
+            // href="https://hayeskg.medium.com/" 
+            onClick = {()=> toggleDropdowns("grow", !dropdowns.grow)} 
+            className="card"
+          >
             <h3>grow &rarr;</h3>
-            <p>Plan ahead.</p>
+            <p>Enable exchange.</p>
             <p>Regenerate.</p>
+            {
+              dropdowns.grow?
+                <div className="subhead">
+                  <p>soil ~ carbon ~ network ~ impact</p>
+                  <p className="emoji"> &#x1F331;	&#x1F41D; &#x1F332;</p>
+                </div>: 
+                <div>
+                </div>
+            }
           </a>
-          <a href="https://www.unep.org/explore-topics/climate-change/facts-about-climate-emergency" className="card">
+          <a 
+            // href="https://www.unep.org/explore-topics/climate-change/facts-about-climate-emergency" 
+            onClick = {()=> toggleDropdowns("purpose", !dropdowns.purpose)} 
+            className="card"
+          >
             <h3>purpose &rarr;</h3>
-            <p>
-              Act now.
-            </p>
+            <p>Act now.</p>
+            <p>Make a change.</p>
+            {
+              dropdowns.purpose?
+                <div className="subhead">
+                  <p>climate ~ ecosystem ~ community </p>
+                  <p className="emoji"> &#x1F30D; &#x1F30A; &#x1F307;</p>
+                </div>: 
+                <div>
+                </div>
+            }
           </a>
         </div>
       </main>
@@ -83,8 +147,8 @@ export default function Home() {
         </div>
         <div>
           <figure>
-            <a href="mailto:kristof.g.hayes@gmail.com?Subject=Hello">
-              <img src='/images/email.png' alt="email logo" />
+            <a href="https://www.kristofhayes.me/">
+              <img src='/images/web.png' alt="weblogo" />
             </a>
           </figure>
         </div>
@@ -138,7 +202,7 @@ export default function Home() {
       }
 
       .title a {
-        color: green;
+        color: olivedrab;
         text-decoration: none;
       }
 
@@ -184,7 +248,7 @@ export default function Home() {
       }
 
       .card {
-        height: 10rem;
+        height: 15rem;
         width: 20rem;
         margin: 1rem;
         flex-basis: 45%;
@@ -200,8 +264,8 @@ export default function Home() {
       .card:hover,
       .card:focus,
       .card:active {
-        color: green;
-        border-color: green;
+        color: olivedrab;
+        border-color: olivedrab;
       }
 
       .card h3 {
@@ -213,6 +277,24 @@ export default function Home() {
         margin: 0;
         font-size: 1.25rem;
         line-height: 1.5;
+      }
+
+      .subhead {
+        text-align: left;
+        // width: 15rem;
+        color: goldenrod;
+        // margin-left: 5rem;
+        margin-top: 2.5rem;
+        
+      }
+
+      .subhead p {
+        font-size: 1rem;
+        text-align: center;
+      }
+
+      .emoji {
+        text-align: center;
       }
 
       @media (max-width: 600px) {
