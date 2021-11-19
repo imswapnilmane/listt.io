@@ -1,4 +1,5 @@
 import Head from 'next/head'
+// import Background from './background';
 
 export default function Home() {
 
@@ -28,8 +29,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         </link>
+        <script src="https://connect.soundcloud.com/sdk/sdk-3.3.2.js"></script>
+        <script>
+          {/* SC.initialize({
+            client_id: 'YOUR_CLIENT_ID',
+            redirect_uri: 'https://example.com/callback'
+          }); */}
+        </script>
       </Head>
-
       <main>
         <h1 className="title">
           welcome to <a href="http://www.listt.io/">listt.io</a>
@@ -37,7 +44,6 @@ export default function Home() {
         <p className="description">
           circular solutions for regeneration
         </p>
-
         <div className="grid">
           <a 
             // href="https://github.com/hayeskg/"
@@ -50,7 +56,7 @@ export default function Home() {
             {
               dropdowns.build?
                 <div className="subhead">
-                  <p>sensors ~ IoT ~ robotics ~ platform ~ data </p>
+                  <p>sensors ⌒ IoT ⌒ robotics ⌒ platform ⌒ data </p>
                   <p className="emoji">	&#x1F4BB;	&#x1F6E0; &#x1F916;</p>
                 </div>: 
                 <div>
@@ -68,7 +74,7 @@ export default function Home() {
             {
               dropdowns.project?
                 <div className="subhead">
-                  <p>agtech ~ innovation ~ food ~ education</p>
+                  <p>agtech ⌒ innovation ⌒ food ⌒ education</p>
                   <p className="emoji">	&#x1F69C;	&#x1F5FA; &#x1F33D;</p>
                 </div>: 
                 <div>
@@ -86,7 +92,7 @@ export default function Home() {
             {
               dropdowns.grow?
                 <div className="subhead">
-                  <p>soil ~ carbon ~ network ~ impact</p>
+                  <p>soil ⌒ carbon ⌒ network ⌒ impact</p>
                   <p className="emoji"> &#x1F331;	&#x1F41D; &#x1F332;</p>
                 </div>: 
                 <div>
@@ -104,7 +110,7 @@ export default function Home() {
             {
               dropdowns.purpose?
                 <div className="subhead">
-                  <p>climate ~ ecosystem ~ community </p>
+                  <p>climate ⌒ ecosystem ⌒ community </p>
                   <p className="emoji"> &#x1F30D; &#x1F30A; &#x1F307;</p>
                 </div>: 
                 <div>
@@ -170,7 +176,7 @@ export default function Home() {
       }
 
       main {
-        padding: 5rem 0;
+        padding: 10rem 0;
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -248,29 +254,29 @@ export default function Home() {
         justify-content: center;
         flex-wrap: wrap;
 
-        max-width: 800px;
+        max-width: 1200px;
         margin-top: 3rem;
       }
 
       .card {
         height: 15rem;
-        width: 20rem;
-        margin: 1rem;
+        width: 40rem;
+        margin: 0.5rem;
         flex-basis: 45%;
-        padding: 1.5rem;
+        padding: 2rem;
         text-align: left;
         color: inherit;
         text-decoration: none;
         border: 1px solid #eaeaea;
-        border-radius: 10px;
+        border-radius: 50px;
         transition: color 0.15s ease, border-color 0.15s ease;
       }
 
       .card:hover,
       .card:focus,
       .card:active {
-        color: olivedrab;
-        border-color: olivedrab;
+        color: purple;
+        border-color: purple;
       }
 
       .card h3 {
@@ -282,20 +288,24 @@ export default function Home() {
         margin: 0;
         font-size: 1.25rem;
         line-height: 1.5;
+        color: grey;
       }
 
       .subhead {
         text-align: left;
         // width: 15rem;
-        color: goldenrod;
+        color: purple;
+        // color: goldenrod;
         // margin-left: 5rem;
         margin-top: 2.5rem;
+        font-size: 2rem;
         
       }
 
       .subhead p {
         font-size: 1rem;
         text-align: center;
+        color: purple;
       }
 
       .emoji {
