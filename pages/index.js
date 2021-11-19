@@ -1,5 +1,4 @@
 import Head from 'next/head'
-// import Background from './background';
 
 export default function Home() {
 
@@ -23,7 +22,6 @@ export default function Home() {
 
   return (
     <div className="container">
-
       <Head>
         <title>listt.io</title>
         <link rel="icon" href="/favicon.ico" />
