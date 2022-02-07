@@ -40,7 +40,7 @@ export default function Home() {
           welcome to <a href="http://www.listt.io/">listt.io</a>
         </h1>
         <p className="description">
-          circular solutions for regeneration
+          appropriate technology solutions for regeneration
         </p>
         <div className="grid">
           <a 
