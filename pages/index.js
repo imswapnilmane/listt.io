@@ -234,7 +234,7 @@ export default function Home() {
 
       .description {
         line-height: 1.5;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
       }
 
       code {
@@ -258,7 +258,7 @@ export default function Home() {
 
       .card {
         height: 15rem;
-        width: 40rem;
+        // width: 40rem;
         margin: 0.5rem;
         flex-basis: 45%;
         padding: 2rem;
