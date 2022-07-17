@@ -23,7 +23,8 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>listt.io - regenag.tools</title>
+        <title>appropriate technology solutions for regeneration - listt.io
+        </title>
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         </link>
