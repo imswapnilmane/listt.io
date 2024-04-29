@@ -1,3 +1,3 @@
 ### listt.io
 
-an open source marketplace for the circular economy
+appropriate technology solution for regenerative agriculture
